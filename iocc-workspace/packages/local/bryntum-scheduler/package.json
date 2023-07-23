@@ -1,0 +1,27 @@
+{
+    "name": "bryntum-scheduler",
+    "sencha": {
+        "format": "1",
+        "version": "6.1.6",
+        "compatVersion": "6.1.6",
+        "creator": "Bryntum",
+        "summary": "Ext Scheduler (TRIAL) Component",
+        "detailedDescription": "Ext Scheduler (TRIAL) Component",
+        "type": "code",
+        "signatures": [
+            {
+                "name": "Bryntum",
+                "uuid": "ca609279-36f0-4c70-8fae-4426996900a8",
+                "created": "2016-04-04T07:55:47Z",
+                "algorithm": "SHA1withRSA",
+                "nonce": "+eRedOAldFg=",
+                "signature": "Ovst1JoZsF0zE3pOrQqBR/TihcJL+Vj8iWAQc7xnLRPosffOkKa7Di+GtzJUCzoK1GxhhR8XOD9p5TzDBQKx50SA2D+beK10PmDm+NNR0DMwZxuuJrpjpq3yQiTCqyfD5IT3vlf63MIFK3bMLGlzg6oOxppWCyFZ3oILTAjFmwzPoWSdOLecGsCqhHydxwpJLCWiUSeLuTzkKKZ1hNguk3/eYrRyVekjztScx5hYl+1rjJbOcnlv/cX5GNMuzDM0GrZlnJfBxAiUw/9UWUqlGFFxWBIOURbtvv+4e16u+8XRzvZT776J/xSBUsUnaOyKoiD/y+MQr9NAuwzpAMXVQg=="
+            }
+        ],
+        "sass": 0,
+        "output": "${package.dir}/build",
+        "framework": "ext",
+        "toolkit": "classic",
+        "classpath": "${package.dir}/build/bryntum-scheduler-debug.js,${package.dir}/src"
+    }
+}

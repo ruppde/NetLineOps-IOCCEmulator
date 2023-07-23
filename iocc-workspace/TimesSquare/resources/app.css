@@ -1,0 +1,426 @@
+.icon-key{
+    background-image:url(icons/Logon_LHblue.png)
+}
+.icon-ops{
+    background-image:url(images/icons/netline_ops-16x16.png)
+}
+.icon-searchleg,.icon-searchLeg{
+    background-image:url(icons/search_LHblue.png)
+}
+.icon-apply{
+    background-image:url(icons/apply_LHblue.png)
+}
+.icon-aircraft-PHYSICAL{
+    background:url(icons/Aircraft_state_physical.png) no-repeat;
+    padding-left:16px
+}
+.icon-aircraft-OVERFLOW{
+    background:url(icons/Aircraft_state_overflow.png) no-repeat;
+    padding-left:16px
+}
+.icon-aircraft-LOGICAL{
+    background:url(icons/Aircraft_state_logical.png) no-repeat;
+    padding-left:16px
+}
+.icon-stop{
+    background-image:url(icons/stop_LHblue.png)
+}
+.icon-accept{
+    background-image:url(icons/accept_LHblue.png)
+}
+.icon-decline{
+    background-image:url(icons/Decline_LHblue.png)
+}
+.x-tbar-loading{
+    background-image:url(icons/Reload_LHblue.png) !important
+}
+.x-tbar-page-next{
+    background-image:url(icons/next_page_LHblue.png) !important
+}
+.x-tbar-page-last{
+    background-image:url(icons/jump_to_last_LHblue.png) !important
+}
+.x-tbar-page-first{
+    background-image:url(icons/jump_to_first_LHblue.png) !important
+}
+.x-tbar-page-prev{
+    background-image:url(icons/previous_page_LHblue.png) !important
+}
+.x-form-uppercase input{
+    text-transform:uppercase
+}
+.x-form-uppercase input::placeholder{
+    text-transform:none
+}
+.x-form-uppercase input::-webkit-input-placeholder{
+    text-transform:none
+}
+.x-form-uppercase input::-moz-placeholder{
+    text-transform:none
+}
+.x-form-uppercase input:-ms-input-placeholder{
+    text-transform:none
+}
+.x-form-uppercase input:-moz-placeholder{
+    text-transform:none
+}
+.x-event-wrapper{
+    position:absolute;
+    border-width:1px;
+    z-index:10
+}
+.x-event-ontop-wrapper{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    overflow:visible
+}
+.x-event-usermarker-wrapper{
+    display:inline-block;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+}
+.x-event-usermarker{
+    display:inline-block;
+    margin:0 2px 0 0;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    background-color:transparent;
+    text-align:center
+}
+.x-event-systemmarker-wrapper{
+    display:inline-block;
+    position:relative;
+    float:right;
+    margin:0;
+    padding:0
+}
+.x-event-systemmarker{
+    display:inline-block;
+    padding:1px;
+    background-color:transparent;
+    text-align:center;
+    float:right
+}
+.x-event-remark-wrapper{
+    display:inline-block;
+    position:relative;
+    float:right;
+    margin:0;
+    padding:0
+}
+.x-event-remark{
+    display:inline-block;
+    padding:1px;
+    background-color:transparent;
+    text-align:center;
+    float:right
+}
+.ops-remark-tooltip-text{
+    padding:0;
+    margin:0
+}
+.ux-filtered-column{
+    font-style:italic;
+    font-weight:bold
+}
+.ux-gridfilter-text-icon{
+    background-image:url(images/ux/grid/find.png) !important
+}
+.ux-rangemenu-icon{
+    display:block;
+    height:16px;
+    background:no-repeat 5px center
+}
+.ux-rangemenu-gt{
+    background-image:url(images/ux/grid/greater_than.png) !important
+}
+.ux-rangemenu-lt{
+    background-image:url(images/ux/grid/less_than.png) !important
+}
+.ux-rangemenu-eq{
+    background-image:url(images/ux/grid/equals.png) !important
+}
+.icon-jump-first{
+    background-image:url('icons/jump_to_first_LHblue.png')
+}
+.icon-jump-last{
+    background-image:url('icons/jump_to_last_LHblue.png')
+}
+.icon-jump-next{
+    background-image:url('icons/next_page_LHblue.png')
+}
+.icon-jump-now{
+    background-image:url('icons/jump_now_LHblue.png')
+}
+.icon-jump-previous{
+    background-image:url('icons/previous_page_LHblue.png')
+}
+.sch-event{
+    border-color:#585858;
+    background:lightblue url('sch/images/transp-1px.png') repeat-x left top
+}
+.event-leg-scheduled{
+    top:10px;
+    height:20px
+}
+.event-leg-scheduled.overlap-1{
+    top:6px
+}
+.event-leg-scheduled.overlap-2{
+    top:2px
+}
+.event-check-planned{
+    top:10px;
+    height:20px
+}
+.event-check-planned.overlap-1{
+    top:6px
+}
+.event-check-planned.overlap-2{
+    top:2px
+}
+.event-leg-actual{
+    top:30px;
+    height:20px
+}
+.event-leg-actual.overlap-1{
+    top:34px;
+    height:20px
+}
+.event-leg-actual.overlap-2{
+    top:38px;
+    height:20px
+}
+.event-check-unplanned{
+    top:30px;
+    height:20px
+}
+.event-check-unplanned.overlap-1{
+    top:34px
+}
+.event-check-unplanned.overlap-2{
+    top:38px
+}
+.event-atc-slot{
+    top:5px;
+    height:49px
+}
+.event-atc-slot-slc{
+    top:5px;
+    height:49px;
+    border-style:dotted
+}
+.event-atc-slot-slc > .sch-event{
+    border:none
+}
+.sch-event-inner{
+    text-align:center;
+    white-space:nowrap;
+    margin-left:0px;
+    margin-right:0px
+}
+.event-leg-name{
+    display:inline-block;
+    margin:0 auto
+}
+.event-leg-departure{
+    float:left;
+    margin-left:3px;
+    margin-right:3px
+}
+.event-leg-arrival{
+    float:right;
+    margin-right:3px
+}
+.event-atc-slot-state,.event-atc-slot-time{
+    position:absolute;
+    width:100%;
+    left:0px
+}
+.event-atc-slot-time{
+    margin-top:29px
+}
+div.x-event-wrapper.event-atc-slot{
+    z-index:11
+}
+div.x-event-wrapper.sch-event-selected{
+    z-index:12;
+    border-width:0px !important
+}
+div.x-event-wrapper.sch-event-selected.sch-event-init-selected{
+    z-index:13
+}
+div.x-event-wrapper.sch-event-selected div.sch-event,div.x-event-wrapper.sch-event-selected div.sch-event.sch-event-hover{
+    font-weight:bold;
+    border-color:black !important
+}
+.sch-simple-timeaxis .sch-simple-timeheader{
+    padding:0
+}
+.sch-column-header{
+    padding:4px 3px 5px
+}
+.sch-schedulerpanel .sch-lockedview .x-grid-cell-inner{
+    font-size:14px;
+    line-height:59px;
+    background:#fff url('images/gantt-resource-transparent.png') repeat-x left top
+}
+.sch-schedulerpanel .sch-lockedview .x-item-disabled .x-grid-checkcolumn{
+    opacity:1
+}
+.sch-schedulerpanel .sch-lockedview .x-grid-cell-first .x-grid-cell-inner{
+    font-size:20px
+}
+.sch-schedulerpanel .x-grid-with-col-lines .x-grid-cell{
+    border-bottom:1px solid grey
+}
+.dwFieldset{
+    border-bottom:none;
+    border-left:none;
+    border-right:none
+}
+.borderLess input,.borderLess .x-form-text-wrap{
+    background:none;
+    border:none;
+    padding:0
+}
+.sch-timeline{
+    border-style:solid;
+    border-color:red;
+    z-index:2
+}
+.x-docked{
+    z-index:0
+}
+.sch-column-line-db{
+    border-left:1px solid #000;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    margin-left:-1px;
+    z-index:0;
+    pointer-events:none
+}
+.event-airport{
+    position:absolute;
+    text-align:center;
+    margin-top:-12px;
+    width:50px;
+    z-index:9
+}
+.tooltip-under-loading,.tooltip-under-loading *{
+    opacity:0 !important
+}
+.tip-hidden{
+    display:none
+}
+.x-tip-default{
+    padding:0px
+}
+.x-tip-body-default{
+    padding-right:15px !important;
+    overflow:auto
+}
+.tooltip-no-scroll{
+    padding-right:3px !important
+}
+.details-ceiling-label-cell{
+    vertical-align:top;
+    padding:3px;
+    width:65px
+}
+.details-marker-icon{
+    display:inline-block;
+    position:relative;
+    top:-1px;
+    height:16px;
+    width:16px;
+    margin:0 3px;
+    border-radius:50%;
+    border:1px solid #2e2d2d
+}
+.x-event-wrapper > .x-event-tooltipable{
+    width:100%
+}
+.sch-schedulerpanel .x-grid-item{
+    border:0px;
+    height:60px
+}
+.sch-schedulerpanel .x-resizable-pinned .x-resizable-handle{
+    display:none
+}
+.detail-panel .x-form-type-text{
+    height:24px
+}
+.detail-panel .x-form-type-text .x-form-text{
+    height:22px
+}
+.flight-log-tab .x-form-text-field-body-default{
+    min-width:unset !important;
+    max-width:unset !important
+}
+.flight-log-tab .normal-cell{
+    padding-right:6px
+}
+.flight-log-tab .normal-cell > .x-field{
+    width:100%
+}
+.flight-log-tab .departure-ad{
+    width:100%
+}
+.flight-log-tab .departure-ad .left-label{
+    text-align:right;
+    width:40px
+}
+.flight-log-tab .departure-ad .offblock-date{
+    width:75px
+}
+.flight-log-tab .departure-ad .offblock-time{
+    width:70px
+}
+.flight-log-tab .departure-ad .takeoff-date{
+    width:75px
+}
+.flight-log-tab .departure-ad .takeoff-time{
+    width:120px
+}
+.flight-log-tab .arrival-aa{
+    width:100%
+}
+.flight-log-tab .arrival-aa .left-label{
+    text-align:right;
+    width:40px
+}
+.flight-log-tab .arrival-aa .touchdown-date{
+    width:75px
+}
+.flight-log-tab .arrival-aa .touchdown-time{
+    width:70px
+}
+.flight-log-tab .arrival-aa .onblock-date{
+    width:75px
+}
+.flight-log-tab .arrival-aa .onblock-time{
+    width:120px
+}
+.flight-log-tab .departure-table{
+    width:100%
+}
+.flight-log-tab .arrival-table{
+    width:100%
+}
+.flight-log-tab .miscellaneous-table{
+    width:100%
+}
+.flight-log-tab .miscellaneous-table .left-label{
+    text-align:right;
+    width:40px
+}
+.flight-log-tab .miscellaneous-table .normal-cell{
+    width:50px
+}

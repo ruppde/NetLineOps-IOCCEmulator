@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inspector Tool</title>
+</head>
+<body>
+<button id="copy-btn">COPY</button>
+<div id="display"></div>
+
+<script>
+    // Copy method
+
+    function copyToClipboard(str) {
+        var el = document.createElement('textarea');
+
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style.position = 'absolute';
+        el.style.left = '-9999px';
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    };
+
+
+    // Companion class
+    function Companion() {
+        var me = this,
+            wnd = window,
+            copyBtn = document.getElementById('copy-btn'),
+            displayEl = document.getElementById('display');
+
+        this.copyBtn = copyBtn;
+        this.displayEl = displayEl;
+        this.parent = window.opener;
+
+        copyBtn.addEventListener('mousedown', function() {
+            copyBtn.classList.add('pressed');
+        });
+        copyBtn.addEventListener('mouseup', function() {
+            copyBtn.classList.remove('pressed');
+        });
+        copyBtn.addEventListener('click', function() {
+            me.onCopyClick();
+        });
+
+
+        wnd.addEventListener('message', function(event) {
+            me.onWindowMessage(event);
+        });
+        wnd.addEventListener('beforeunload', function() {
+            me.onWindowUnload();
+        });
+        wnd.addEventListener('load', function() {
+            me.onWindowLoad();
+        })
+    };
+
+    Companion.prototype.onWindowUnload = function() {
+        if (this.parent) {
+            this.parent.postMessage({ type: 'closed' }, window.location.origin);
+        }
+    };
+    Companion.prototype.onWindowLoad = function() {
+        if (this.parent) {
+            this.parent.postMessage({ type: 'opened' }, window.location.origin);
+        }
+    };
+    Companion.prototype.onWindowMessage = function(event) {
+        var data = event.data;
+
+        switch (data.type) {
+            case 'selected':
+                this.display(data.payload);
+                break;
+            default:
+                break;
+        }
+    };
+    Companion.prototype.onCopyClick = function() {
+        var selector;
+
+        if (this.data) {
+            selector = this.data.split(' -> ').map(function(str) { return '.' + str; }).join(' ');
+            selector && copyToClipboard(selector);
+        }
+    }
+
+    Companion.prototype.display = function(data) {
+        this.displayEl.innerHTML = data;
+        this.setData(data);
+    };
+
+    Companion.prototype.setData = function(data) {
+        this.data = data;
+    };
+
+    // Main script
+    var companion = new Companion();
+</script>
+
+<style>
+    html, body {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    * {
+        font-family: tahoma, arial, verdana, sans-serif;
+    }
+
+    #copy-btn {
+        background-color: #000;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    #copy-btn:hover {
+        background-color: #2d2d2d;
+    }
+
+    #copy-btn.pressed {
+        background-color: #363636;
+    }
+
+    #display {
+        flex: 1;
+        padding: 16px;
+        letter-spacing: 1px;
+    }
+</style>
+</body>
+</html>

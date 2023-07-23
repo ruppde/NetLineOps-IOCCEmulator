@@ -1,0 +1,41 @@
+{
+    "applications": {
+        "ioccSecurity": {
+            "name": "iocc-security-webui",
+            "requiredRight": "View_SecurityAdminApplication"
+        },
+        "ioccSecurityAuthorization": {
+            "name": "iocc-security-authorization",
+            "requiredRight": "editRight"
+        },
+        "ioccSecurityIdentity": {
+            "name": "iocc-security-identity",
+            "requiredRight": "editIdentity"
+        },
+        "briefing": {
+            "name": "Briefing",
+            "requiredRight": "View_myBriefingApplication"
+        },
+        "opsTimesSquare": {
+            "name": "NetLineOps",
+            "requiredRight": "ACCESS_WEBCLIENT",
+            "pwdChangeDisabled": false
+        },
+        "crewLinkRoster": {
+            "name": "CrewLink",
+            "requiredRight": "View_CrewLinkRosterApplication"
+        },
+        "crewLinkAdmin": {
+            "name": "CrewLink",
+            "requiredRight": "View_CrewLinkNoCrewApplication"
+        },
+        "crewLinkCrewInformation": {
+            "name": "CrewLink",
+            "requiredRight": "View_CrewLinkCrewApplication"
+        },
+        "crewLinkCheckIn": {
+            "name": "CrewLink",
+            "requiredRight": "View_CrewLinkCrewApplication"
+        }
+    }
+}
